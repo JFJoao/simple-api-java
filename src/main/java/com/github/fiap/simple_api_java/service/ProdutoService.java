@@ -26,12 +26,14 @@ public class ProdutoService {
     public void delete(long id) {
         produtoRepository.deleteById(id);
     }
-
+    
     public Optional<Produto> findById(long id) {
         return produtoRepository.findById(id);
     }
+
     
     public boolean existsById(long id) {
         return produtoRepository.existsById(id);
     }
+//fim
 }
